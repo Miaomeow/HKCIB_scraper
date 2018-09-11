@@ -8,6 +8,15 @@ If you've installed a 32-bit Python before and wish to remove it, you can run yo
 
 But since the difference between 32-bit and 64-bit Python is a matter of computational capacity, it doesn't really matter which one you use when you're doing a small web scraper.
 
+## Creating an Empty Project Folder
+Simply create a project folder in your computer.
+
+For me I put my code here:
+```
+C:\Dev\HKCIB
+```
+I find that the shorter my working folder name is, the easier for me to remember where it is.
+
 ## Installing Visual Studio Code
 Visual Studio Code (VS Code) is a free text editor created by Microsoft. Compared to Notepad++, it offers a more user-friendly environment, fancy extention packages, in-build debugger, and is under continuous support from professionals.
 
