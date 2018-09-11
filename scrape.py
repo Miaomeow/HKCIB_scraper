@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import re
+import os
 
 from selenium import webdriver
 
@@ -14,6 +15,11 @@ total_page = int(re.search(r'\d+',total_page).group(0))
 
 # the javascript the clicks the next page, copied from the website itself
 next_page_script = "document.forms['form1']['form1:_idcl'].value='form1:_id13next';document.forms['form1']['form1:_id13'].value='next'; document.forms['form1'].submit();"
+
+# create a folder that contains the member details if it does not exist
+if not os.path.exists("MemberDetails"):
+    os.makedirs("MemberDetails")
+
 for p in range(1,total_page):
     # try to download the webpage as .html file
     # and give it a page number
